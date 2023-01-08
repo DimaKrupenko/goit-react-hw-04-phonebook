@@ -1,0 +1,12 @@
+.filter__label {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+.filter__input {
+  display: flex;
+  width: 350px;
+  margin-top: 20px;
+  padding: 5px;
+}

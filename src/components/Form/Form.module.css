@@ -1,0 +1,19 @@
+.form {
+  display: flex;
+  gap: 20px;
+  width: 600px;
+  flex-wrap: wrap;
+  border: 2px solid gray;
+  padding: 5px;
+}
+
+.input {
+  display: flex;
+  width: 300px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.button__form {
+  width: 100px;
+}

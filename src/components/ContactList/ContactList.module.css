@@ -1,0 +1,20 @@
+.contact__buttton {
+  display: flex;
+  margin-left: 20px;
+  width: 130px;
+  height: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.contact {
+  padding-left: 0;
+}
+
+.contact__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
