@@ -3,16 +3,12 @@ import { nanoid } from 'nanoid';
 import styles from './Form.module.css';
 import { useState } from 'react';
 
-const Form = () => {
-  // state = {
-  //   contacts: [],
-  //   name: '',
-  //   number: '',
-  // };
-
-  // const [contacts, setContacts] = useState([]);
+const Form = ({ onSubmit }) => {
+  const [contacts] = useState([]);
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
+
+  const data = { contacts, name, number };
 
   const nameId = nanoid();
   const numberId = nanoid();
@@ -35,12 +31,12 @@ const Form = () => {
     setNumber(evt.target.value);
   };
 
-  const handleSubmit = (evt, { onSubmit }) => {
+  const handleSubmit = evt => {
     evt.preventDefault();
 
     reset();
 
-    // onSubmit();
+    onSubmit(data);
   };
 
   const reset = () => {
