@@ -31,19 +31,16 @@ const App = () => {
     console.log(contact)
       const nameFilter = contacts.filter(cont => cont.name.includes(contact.name))
       const nameLength = nameFilter.length
-    
-    setContacts(prevState => 
-      // const { name, number, id } = prevState;
-     
-        [contact, ...prevState])
       
        
       if (nameLength === 1) {
         return  alert(contact.name, 'is already in contacts')
-
-
       }
+      
+      setContacts(prevState => 
+      // const { name, number, id } = prevState;
      
+        [contact, ...prevState])
     
     
   }
